@@ -8,3 +8,6 @@ Källa: revision 113, 35 kapitel; källfiler ändrades inte. EPUB genererad med 
 
 ## Omslagsbild r117 (2026-10-15)
 Omslagsbilden är fastställd och lagd som `publishing/cover.png`. `publishing/metadata.yaml` pekar nu på bilden via `cover-image`. Nästa EPUB/PDF-export ska använda denna bild utan att ändra kapiteltexten.
+
+## Exportstandard r120
+GitHub- och lokal export använder Romanskaparens standard: omslagsbilden första sida i EPUB/PDF, centrerad titelsida, EPUB-nav i läsarens index (linear=no i spine), tvådelade centrerade kapitelrubriker samt PDF-innehållsförteckning med länkar. 35 kapitel ska kontrolleras utan att manusfiler ändras.
