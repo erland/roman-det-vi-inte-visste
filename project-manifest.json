@@ -1,5 +1,5 @@
 {
-  "canonical_zip_name": "det-vi-inte-visste-r0117-omslag-i-projektet.zip",
+  "canonical_zip_name": "det-vi-inte-visste-r0118-release-bokbygge.zip",
   "chapters": {
     "count": 35,
     "first": 1,
@@ -46,31 +46,27 @@
   "created_at": "2026-10-15T06:17:55Z",
   "last_operation": {
     "changed_files": [
-      "README.md",
+      ".github/workflows/build-book.yml",
       "arbetslogg.md",
       "project-index.md",
       "projektstatus.md",
-      "publishing/build-notes.md",
-      "publishing/cover.png",
-      "publishing/metadata.yaml",
-      "revision-log.md",
-      "roman-bibel.md"
+      "revision-log.md"
     ],
-    "description": "Lade in fastställd omslagsbild i projektet och uppdaterade publiceringsmetadata",
-    "source_revision": 116,
-    "source_zip_name": "det-vi-inte-visste-r0116-forfattare-erland-lindmark.zip",
+    "description": "Lade till EPUB och PDF som bilagor på publicerade GitHub Releases",
+    "source_revision": 117,
+    "source_zip_name": "det-vi-inte-visste-r0117-omslag-i-projektet.zip",
     "type": "commit"
   },
   "migration": null,
-  "parent_revision": 116,
+  "parent_revision": 117,
   "project_id": "f83b4e88-0f5a-4264-a0a4-a2269eb0bff5",
   "project_slug": "det-vi-inte-visste",
-  "revision": 117,
+  "revision": 118,
   "schema_version": 1,
   "tracked_files": {
     ".github/workflows/build-book.yml": {
-      "bytes": 1163,
-      "sha256": "57de96766a0396b408236e5fb74d5da390109720d295fa613f296b899517f51a"
+      "bytes": 1924,
+      "sha256": "246d5d9c65266690227044790cf704ea3a11b5988cbba3fbf19845772c7d3c62"
     },
     ".github/workflows/verify.yml": {
       "bytes": 442,
@@ -81,8 +77,8 @@
       "sha256": "135f9326d943ea0acc1c2bee2a2c3f5371b0e6b96d371d6fdaf4bec117ac0912"
     },
     "arbetslogg.md": {
-      "bytes": 27053,
-      "sha256": "e6cd09a2835e1a2889f5f1c719d19692a165be5abc26b3b6dc9cf4dd60f5659f"
+      "bytes": 27276,
+      "sha256": "db7d7e0e59dcfe207b2f507925310cf68d12ee5ea6aa81396a8412a845e169b3"
     },
     "exports/README.md": {
       "bytes": 223,
@@ -261,12 +257,12 @@
       "sha256": "697c82e3201373dae8add4fceb1c2f5380e8dc8cce57fefe847a29d4fd27d506"
     },
     "project-index.md": {
-      "bytes": 5675,
-      "sha256": "f3aade9c4f270624b5dccb1ff3c969e67400e44807d111a0d56c771520a99f29"
+      "bytes": 5673,
+      "sha256": "94248742c77a5b6b66d0b95855324415f7e7854b3c9074553b8e8c2f905ede4f"
     },
     "projektstatus.md": {
       "bytes": 2576,
-      "sha256": "8b9dddfe862854edc4ca74a441789231c63da01fb620d9d3e3731840d3bb5d96"
+      "sha256": "c8df7d59aae53f59bb8f8822975e6ce69b7ef399833965f75d1feb41263ddc24"
     },
     "publishing/build-notes.md": {
       "bytes": 1166,
@@ -293,8 +289,8 @@
       "sha256": "9a6ad6a1fba88f2f8a754dbf8077b5e08175c135a3d689874104c169a25beab3"
     },
     "revision-log.md": {
-      "bytes": 33556,
-      "sha256": "031d5ebcaf46e3d07bdb912fb5d1b9558841d29d25908a6076b555977ace3a5d"
+      "bytes": 33790,
+      "sha256": "578c998a8f021e3b4b752e72d62982d400a71a4d81c9e3bd55a23be1f631b9bb"
     },
     "revisionsonskemal.md": {
       "bytes": 24958,
@@ -329,5 +325,5 @@
       "sha256": "a13c556fd6897680a9b5666792cce8719ff71d995ed1c5f9373a0864fad7f36d"
     }
   },
-  "updated_at": "2026-10-15T13:28:07Z"
+  "updated_at": "2026-10-15T13:48:58Z"
 }
