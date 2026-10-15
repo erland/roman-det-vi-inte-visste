@@ -14,10 +14,19 @@ ET.register_namespace('',X)
 def transform(path: Path) -> None:
     with zipfile.ZipFile(path) as source:
         files={i.filename:(i,source.read(i.filename)) for i in source.infolist()}
-    nav_done=0;heading_done=0
+    nav_done=0;heading_done=0;cover_done=0
     for name,(info,data) in list(files.items()):
         if name.endswith('.opf'):
             root=ET.fromstring(data)
+            manifest=root.find(f'{{{O}}}manifest')
+            spine=root.find(f'{{{O}}}spine')
+            if manifest is None or spine is None:raise SystemExit('Missing EPUB manifest/spine')
+            cover_item=next((i for i in manifest.findall(f'{{{O}}}item') if i.get('href','').endswith('cover.xhtml')),None)
+            if cover_item is None:raise SystemExit('Missing EPUB cover XHTML')
+            cover_refs=[i for i in spine.findall(f'{{{O}}}itemref') if i.get('idref')==cover_item.get('id')]
+            if len(cover_refs)!=1:raise SystemExit('Cover must occur once in EPUB spine')
+            cover_ref=cover_refs[0]
+            spine.remove(cover_ref);spine.insert(0,cover_ref);cover_ref.set('linear','yes');cover_done+=1
             for itemref in root.findall(f'.//{{{O}}}spine/{{{O}}}itemref'):
                 ident=itemref.get('idref')
                 match=root.find(f'.//{{{O}}}manifest/{{{O}}}item[@id="{ident}"]')
@@ -38,6 +47,7 @@ def transform(path: Path) -> None:
                 heading_done+=1
             files[name]=(info,ET.tostring(root,encoding='utf-8',xml_declaration=True))
     if not nav_done:raise SystemExit('EPUB navigation manifest item missing in spine')
+    if not cover_done:raise SystemExit('EPUB cover not normalized')
     if not heading_done:raise SystemExit('No chapter headings formatted')
     with tempfile.NamedTemporaryFile(suffix='.epub',dir=path.parent,delete=False) as tmp: dest=Path(tmp.name)
     try:

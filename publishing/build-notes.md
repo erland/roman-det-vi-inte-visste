@@ -11,3 +11,6 @@ Omslagsbilden är fastställd och lagd som `publishing/cover.png`. `publishing/m
 
 ## Exportstandard r120
 GitHub- och lokal export använder Romanskaparens standard: omslagsbilden första sida i EPUB/PDF, centrerad titelsida, EPUB-nav i läsarens index (linear=no i spine), tvådelade centrerade kapitelrubriker samt PDF-innehållsförteckning med länkar. 35 kapitel ska kontrolleras utan att manusfiler ändras.
+
+## EPUB-läsordning och stycken r121
+EPUB-stycken använder samma kompakta styckesindelning som PDF utan extra första-radsindrag och marginal efter varje p. Omslaget är explicit första linjära EPUB-sida. Apple Books kan behöva radera en tidigare importerad version eftersom dess bibliotek/cache kan bevara en äldre utgåva.

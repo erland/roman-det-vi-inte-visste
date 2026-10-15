@@ -26,6 +26,23 @@ def main() -> int:
             if z.testzip() is not None or z.read("mimetype") != b"application/epub+zip":
                 raise SystemExit("Invalid EPUB archive")
             names = z.namelist()
+            # The cover must be an actual first reading-order document,
+            # not merely a cover-image property for library thumbnails.
+            opfs=[n for n in names if n.endswith('.opf')]
+            if len(opfs)!=1: raise SystemExit('Expected one EPUB package file')
+            opf=ET.fromstring(z.read(opfs[0]))
+            ns={'o':'http://www.idpf.org/2007/opf'}
+            items={i.get('id'):i for i in opf.findall('.//o:manifest/o:item',ns)}
+            refs=opf.findall('.//o:spine/o:itemref',ns)
+            if not refs or refs[0].get('idref') not in items:
+                raise SystemExit('Missing first EPUB spine item')
+            cover=items[refs[0].get('idref')]
+            if not cover.get('href','').endswith('cover.xhtml') or refs[0].get('linear')=='no':
+                raise SystemExit('EPUB must open with a linear cover page')
+            css_text='\n'.join(z.read(n).decode('utf-8') for n in names if n.endswith('.css'))
+            if 'p {text-indent:0; margin:0;}' not in css_text:
+                raise SystemExit('EPUB paragraph CSS differs from PDF baseline')
+
             navs = [name for name in names if name.endswith("nav.xhtml")]
             if not navs:
                 raise SystemExit("Missing EPUB navigation")

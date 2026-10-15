@@ -242,3 +242,5 @@
 - 2026-10-15 | Revision 119 | Rättade EPUB-byggskriptets anrop av projektets enargumentskontroll i publishing/fix-epub-after-pandoc.py. Bokexporten påverkar inte de 35 kapitlen.
 
 - 2026-10-15 | Revision 120 | Anpassade EPUB/PDF-export till Romanskaparens standard för omslag, centrerad titelsida, EPUB-navigering och tvådelade kapitelrubriker. Inga kapitelfiler ändrades.
+
+- 2026-10-15 | Revision 121 | EPUB-stycken synkade med PDF-sättningen utan extra indrag och styckemellanrum; omslagets plats som första linjära EPUB-sida säkrad och valideringen skärpt. Manus oförändrat.
