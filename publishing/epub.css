@@ -9,10 +9,12 @@ body.titlepage, .titlepage {text-align:center !important; text-indent:0 !importa
 section.level1>h1, h1 {font-weight:normal; text-align:center; margin:.8em 0 .35em; break-before:auto; page-break-before:auto; line-height:1.10;}
 h1 .chapter-number {display:block; text-align:center; font-size:1.45em; margin:0 0 .08em;}
 h1 .chapter-title {display:block; text-align:center; font-size:1.30em; margin:0 0 .2em;}
-/* Match the PDF book layout: no automatic first-line indent or paragraph gap. */
-body[epub\:type="bodymatter"] p, section.level1 p {text-indent:0; margin:0;}
-p {text-indent:0; margin:0;}
-/* Standalone cover is the first linear EPUB page. */
-body#cover {margin:0; padding:0; text-align:center;}
-body#cover #cover-image {margin:0; padding:0; width:100%; height:100%;}
-body#cover svg, body#cover img {display:block; max-width:100%; max-height:100%; margin:0 auto;}
+/* Romanens löptext: diskret första-radsindrag, utan extra avstånd mellan stycken. */
+section.level1 p {text-indent:1.15em; margin:0; line-height:1.46;}
+section.level1 h1 + p, section.level1 p.first-paragraph {text-indent:0;}
+/* Scenbrytningar har avsiktligt luft i stället för indrag. */
+section.level1 p.scene-start {text-indent:0; margin-top:1.3em;}
+/* Självständig omslagssida i EPUB, vanlig XHTML-bild för läsarkompatibilitet. */
+body#cover {margin:0 !important; padding:0 !important; text-align:center;}
+body#cover #cover-image {margin:0; padding:0; text-align:center;}
+body#cover img {display:block; width:auto; max-width:100%; max-height:98vh; height:auto; margin:0 auto;}

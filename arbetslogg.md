@@ -244,3 +244,5 @@
 - 2026-10-15 | Revision 120 | Anpassade EPUB/PDF-export till Romanskaparens standard för omslag, centrerad titelsida, EPUB-navigering och tvådelade kapitelrubriker. Inga kapitelfiler ändrades.
 
 - 2026-10-15 | Revision 121 | EPUB-stycken synkade med PDF-sättningen utan extra indrag och styckemellanrum; omslagets plats som första linjära EPUB-sida säkrad och valideringen skärpt. Manus oförändrat.
+
+- 2026-10-15 | Revision 122 | Korrigerade PDF-omslagets centrering och EPUB:s synliga omslagsbild (XHTML-img) samt införde tydliga första-radsindrag i romantext. Exportkoden och kontroller uppdaterade; kapitel oförändrade.

@@ -1,9 +1,9 @@
 # Project Index – Det vi inte visste
 
 - Project-id: f83b4e88-0f5a-4264-a0a4-a2269eb0bff5
-- Revision: 121
-- Källrevision: 120
-- Kanonisk ZIP: det-vi-inte-visste-r0121-epub-stycken-omslag.zip
+- Revision: 122
+- Källrevision: 121
+- Kanonisk ZIP: det-vi-inte-visste-r0122-omslag-stycken.zip
 - Titel: Det vi inte visste
 - Undertitel: ej fastställd
 - Författare: Erland Lindmark

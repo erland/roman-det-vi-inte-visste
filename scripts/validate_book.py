@@ -40,8 +40,12 @@ def main() -> int:
             if not cover.get('href','').endswith('cover.xhtml') or refs[0].get('linear')=='no':
                 raise SystemExit('EPUB must open with a linear cover page')
             css_text='\n'.join(z.read(n).decode('utf-8') for n in names if n.endswith('.css'))
-            if 'p {text-indent:0; margin:0;}' not in css_text:
-                raise SystemExit('EPUB paragraph CSS differs from PDF baseline')
+            if 'section.level1 p {text-indent:1.15em;' not in css_text:
+                raise SystemExit('Missing readable novel paragraph indentation')
+            cover_name=next(n for n in names if n.endswith('cover.xhtml'))
+            cover_xhtml=z.read(cover_name)
+            if b'<img ' not in cover_xhtml or b'../media/cover.png' not in cover_xhtml:
+                raise SystemExit('EPUB cover must be a visible XHTML image, not SVG only')
 
             navs = [name for name in names if name.endswith("nav.xhtml")]
             if not navs:
