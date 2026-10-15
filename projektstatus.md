@@ -12,7 +12,7 @@
 
 - **Fas:** Samtliga 35 kapitel helhetsbearbetade; separat slutkorrektur avslutad, kapitel 1–35 av 35 klara
 - **Project-id:** f83b4e88-0f5a-4264-a0a4-a2269eb0bff5
-- **Revision:** 117
+- **Revision:** 119
 - **Senaste skrivna/godkända kapitel:** 35. Det vi vet
 - **Nästa rekommenderade steg:** EPUB och PDF för provläsning skapade i revision 114; genomför extern provläsning eller skapa ny export med författarnamn och omslagsbild. Författarnamn fastställt till Erland Lindmark i revision 116 och omslagsbild införd i revision 117; återstående arbete gäller fullständiga publiceringsmetadata samt ny bokexport vid behov. Samlad slutkontroll godkänd i revision 113; inga kapitelfiler ändrade.
 - **Kapitelstatus:** 35 planerade, 35 skapade, 35 godkända

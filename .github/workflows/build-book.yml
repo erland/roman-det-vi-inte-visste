@@ -4,7 +4,7 @@ on:
   release:
     types: [published]
 permissions:
-  contents: read
+  contents: write
 jobs:
   book:
     runs-on: ubuntu-latest
@@ -27,6 +27,20 @@ jobs:
         run: |
           python scripts/project_integrity.py verify .
           git diff --exit-code
+      - name: Publish EPUB and PDF as release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp "${{ runner.temp }}/roman-book/roman.epub" "${{ runner.temp }}/roman-book/det-vi-inte-visste-${RELEASE_TAG}.epub"
+          cp "${{ runner.temp }}/roman-book/roman.pdf" "${{ runner.temp }}/roman-book/det-vi-inte-visste-${RELEASE_TAG}.pdf"
+          gh release upload "$RELEASE_TAG" \
+            "${{ runner.temp }}/roman-book/det-vi-inte-visste-${RELEASE_TAG}.epub" \
+            "${{ runner.temp }}/roman-book/det-vi-inte-visste-${RELEASE_TAG}.pdf" \
+            --clobber
       - uses: actions/upload-artifact@v4
         with:
           name: roman-epub-pdf

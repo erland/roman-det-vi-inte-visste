@@ -236,3 +236,7 @@
 - 2026-10-15 | Revision 116 | Författare fastställd till Erland Lindmark. Enbart metadata, projektstatus och arbetslogg ändrade; samtliga 35 kapitel bevarade byte-identiska från r115. EPUB/PDF med korrekt författaruppgift byggs vid nästa export.
 
 - 2026-10-15 | Revision 117 | Lade in fastställd omslagsbild i projektet som `publishing/cover.png` och uppdaterade publiceringsmetadata, status och index. Samtliga 35 kapitel bevarade byte-identiska från r116. Nästa steg: ny EPUB/PDF-export när omslag och författarnamn ska med i böckerna.
+
+- 2026-10-15 | Revision 118 | GitHub Actions för publicerade Releases: bygger och verifierar EPUB/PDF, bifogar båda med release-tag i filnamnet samt behåller Actions-artefakter. Alla 35 kapitel byte-identiska mot r117.
+
+- 2026-10-15 | Revision 119 | Rättade EPUB-byggskriptets anrop av projektets enargumentskontroll i publishing/fix-epub-after-pandoc.py. Bokexporten påverkar inte de 35 kapitlen.

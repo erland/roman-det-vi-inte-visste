@@ -12,8 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHAPTER = re.compile(r"kapitel-(\d{2,})\.md$")
 
-def run(command: list[str]) -> None:
-    subprocess.run(command, check=True)
+def run(command: list[str], cwd: Path | None = None) -> None:
+    subprocess.run(command, check=True, cwd=cwd)
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -47,11 +47,11 @@ def main() -> int:
             cmd = options + ["--split-level=1", "--to=epub3", "--output", str(target)]
             if css.exists():
                 cmd += ["--css", str(css)]
-            run(cmd)
+            run(cmd, cwd=root)
             fixer = root / "publishing/fix-epub-after-pandoc.py"
             if fixer.exists():
-                run([sys.executable, str(fixer), str(target), str(Path(tmp) / "fixed.epub")])
-                (Path(tmp) / "fixed.epub").replace(target)
+                # The project-local checker accepts one argument and does not rewrite the EPUB.
+                run([sys.executable, str(fixer), str(target)])
         if args.format in ("pdf", "both"):
             target = output / "roman.pdf"
             cmd = options + ["--pdf-engine=xelatex", "--top-level-division=chapter",
@@ -59,9 +59,10 @@ def main() -> int:
                               "-V", "geometry:margin=18mm", "-V", "fontsize=11pt",
                               "--output", str(target)]
             header = root / "publishing/pdf-template.tex"
-            if header.exists():
-                cmd += ["--include-in-header", str(header)]
-            run(cmd)
+            # The project PDF file is a full LaTeX template, not a header fragment.
+            # Use Pandoc default template to preserve its generated TOC.
+            # It must not be passed as --include-in-header.
+            run(cmd, cwd=root)
     run([sys.executable, str(root / "scripts/project_integrity.py"), "verify", str(root)])
     return 0
 
