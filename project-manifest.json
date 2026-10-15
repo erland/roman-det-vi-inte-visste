@@ -1,5 +1,5 @@
 {
-  "canonical_zip_name": "det-vi-inte-visste-r0118-release-bokbygge.zip",
+  "canonical_zip_name": "det-vi-inte-visste-r0119-fix-epub-build.zip",
   "chapters": {
     "count": 35,
     "first": 1,
@@ -46,22 +46,22 @@
   "created_at": "2026-10-15T06:17:55Z",
   "last_operation": {
     "changed_files": [
-      ".github/workflows/build-book.yml",
       "arbetslogg.md",
       "project-index.md",
       "projektstatus.md",
-      "revision-log.md"
+      "revision-log.md",
+      "scripts/build_book.py"
     ],
-    "description": "Lade till EPUB och PDF som bilagor på publicerade GitHub Releases",
-    "source_revision": 117,
-    "source_zip_name": "det-vi-inte-visste-r0117-omslag-i-projektet.zip",
+    "description": "Rättade EPUB-byggskriptets anrop av efterkontroll",
+    "source_revision": 118,
+    "source_zip_name": "det-vi-inte-visste-r0118-release-bokbygge.zip",
     "type": "commit"
   },
   "migration": null,
-  "parent_revision": 117,
+  "parent_revision": 118,
   "project_id": "f83b4e88-0f5a-4264-a0a4-a2269eb0bff5",
   "project_slug": "det-vi-inte-visste",
-  "revision": 118,
+  "revision": 119,
   "schema_version": 1,
   "tracked_files": {
     ".github/workflows/build-book.yml": {
@@ -77,8 +77,8 @@
       "sha256": "135f9326d943ea0acc1c2bee2a2c3f5371b0e6b96d371d6fdaf4bec117ac0912"
     },
     "arbetslogg.md": {
-      "bytes": 27276,
-      "sha256": "db7d7e0e59dcfe207b2f507925310cf68d12ee5ea6aa81396a8412a845e169b3"
+      "bytes": 27457,
+      "sha256": "82dee3107406f8fecfafac3264c6f0e51e6c0c8a3d7031b92d6a614983066562"
     },
     "exports/README.md": {
       "bytes": 223,
@@ -257,12 +257,12 @@
       "sha256": "697c82e3201373dae8add4fceb1c2f5380e8dc8cce57fefe847a29d4fd27d506"
     },
     "project-index.md": {
-      "bytes": 5673,
-      "sha256": "94248742c77a5b6b66d0b95855324415f7e7854b3c9074553b8e8c2f905ede4f"
+      "bytes": 5671,
+      "sha256": "fdd05ca6bfc7ee51d58e3dccec38d7154711a33d9ae245fb89cec0e30dfcf61f"
     },
     "projektstatus.md": {
       "bytes": 2576,
-      "sha256": "c8df7d59aae53f59bb8f8822975e6ce69b7ef399833965f75d1feb41263ddc24"
+      "sha256": "7f2471d21a84082c3dd3eca27a9933e6233c693c7ce8a8ebcb7a47147c7cc12d"
     },
     "publishing/build-notes.md": {
       "bytes": 1166,
@@ -289,8 +289,8 @@
       "sha256": "9a6ad6a1fba88f2f8a754dbf8077b5e08175c135a3d689874104c169a25beab3"
     },
     "revision-log.md": {
-      "bytes": 33790,
-      "sha256": "578c998a8f021e3b4b752e72d62982d400a71a4d81c9e3bd55a23be1f631b9bb"
+      "bytes": 33995,
+      "sha256": "d6014c9dd8b97e43db801ecc397850de8bb07d70960f5381d37344b6cde17a2c"
     },
     "revisionsonskemal.md": {
       "bytes": 24958,
@@ -301,8 +301,8 @@
       "sha256": "8cb415172415cabba667f0f85ab5327f863ec9df5c5ed9d92eb488a8b4c89f98"
     },
     "scripts/build_book.py": {
-      "bytes": 3342,
-      "sha256": "c912fba952522f40968d1c88da4ddf1819df0af00258e3808ee66f6037786880"
+      "bytes": 3527,
+      "sha256": "6a7cfd400d7567742dec08f353334cd7238bc28d77b6c5998de6c608f48ec1e2"
     },
     "scripts/project_integrity.py": {
       "bytes": 5397,
@@ -325,5 +325,5 @@
       "sha256": "a13c556fd6897680a9b5666792cce8719ff71d995ed1c5f9373a0864fad7f36d"
     }
   },
-  "updated_at": "2026-10-15T13:48:58Z"
+  "updated_at": "2026-10-15T13:55:57Z"
 }
