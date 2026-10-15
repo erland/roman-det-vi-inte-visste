@@ -240,3 +240,5 @@
 - 2026-10-15 | Revision 118 | GitHub Actions för publicerade Releases: bygger och verifierar EPUB/PDF, bifogar båda med release-tag i filnamnet samt behåller Actions-artefakter. Alla 35 kapitel byte-identiska mot r117.
 
 - 2026-10-15 | Revision 119 | Rättade EPUB-byggskriptets anrop av projektets enargumentskontroll i publishing/fix-epub-after-pandoc.py. Bokexporten påverkar inte de 35 kapitlen.
+
+- 2026-10-15 | Revision 120 | Anpassade EPUB/PDF-export till Romanskaparens standard för omslag, centrerad titelsida, EPUB-navigering och tvådelade kapitelrubriker. Inga kapitelfiler ändrades.

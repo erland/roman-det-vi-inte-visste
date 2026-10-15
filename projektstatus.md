@@ -12,7 +12,7 @@
 
 - **Fas:** Samtliga 35 kapitel helhetsbearbetade; separat slutkorrektur avslutad, kapitel 1–35 av 35 klara
 - **Project-id:** f83b4e88-0f5a-4264-a0a4-a2269eb0bff5
-- **Revision:** 119
+- **Revision:** 120
 - **Senaste skrivna/godkända kapitel:** 35. Det vi vet
 - **Nästa rekommenderade steg:** EPUB och PDF för provläsning skapade i revision 114; genomför extern provläsning eller skapa ny export med författarnamn och omslagsbild. Författarnamn fastställt till Erland Lindmark i revision 116 och omslagsbild införd i revision 117; återstående arbete gäller fullständiga publiceringsmetadata samt ny bokexport vid behov. Samlad slutkontroll godkänd i revision 113; inga kapitelfiler ändrade.
 - **Kapitelstatus:** 35 planerade, 35 skapade, 35 godkända
@@ -28,3 +28,5 @@
 - GitHub Actions-stöd infört som frivilligt teknikstöd i revision 115; 35 kapitel oförändrade.
 - **Författarmetadata r116:** Erland Lindmark fastställd. Provläsningsfilerna från r114 är historiska exportfiler och behöver byggas på nytt för att visa författarnamnet.
 - **Omslagsmetadata r117:** Omslagsbild fastställd och lagd i `publishing/cover.png`. Befintliga provläsningsfiler från r114 är fortfarande historiska exporter utan omslag.
+
+- **Exportlayout r120:** GitHub-bygget anpassat till Romanskaparens EPUB/PDF-standard (omslag, titelsida, navigation och tvådelade kapitelrubriker).

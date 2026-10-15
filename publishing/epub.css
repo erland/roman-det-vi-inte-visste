@@ -1,1 +1,12 @@
-body { font-family: serif; line-height: 1.5; } h1 { text-align:center; margin-top:.8em; margin-bottom:.35em; } .chapter-number {font-size:1.45em; margin-bottom:.08em;} .chapter-title {font-size:1.30em; margin-top:0; margin-bottom:.2em;} p { text-indent: 1.1em; margin: 0 0 .25em; }
+body {font-family: serif; line-height:1.46; margin:0; padding:0;}
+/* Pandoc EPUB3 generated title page: center title, author, and all other text. */
+body#epub-titlepage, body.epub-titlepage, section#titlepage, div#titlepage, #titlepage,
+body.titlepage, .titlepage {text-align:center !important; text-indent:0 !important;}
+#titlepage *, .titlepage *, body#epub-titlepage *, body.epub-titlepage * {text-align:center !important; text-indent:0 !important;}
+#titlepage, .titlepage {margin-top:28vh !important;}
+#titlepage h1, #titlepage .title, .titlepage h1 {font-size:2.15em; margin-bottom:1.25em;}
+#titlepage .author, .titlepage .author {font-size:1.25em;}
+section.level1>h1, h1 {font-weight:normal; text-align:center; margin:.8em 0 .35em; break-before:auto; page-break-before:auto; line-height:1.10;}
+h1 .chapter-number {display:block; text-align:center; font-size:1.45em; margin:0 0 .08em;}
+h1 .chapter-title {display:block; text-align:center; font-size:1.30em; margin:0 0 .2em;}
+p {text-indent:1em; margin:0 0 .35em;}

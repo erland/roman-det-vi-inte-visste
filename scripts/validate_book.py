@@ -38,6 +38,12 @@ def main() -> int:
         b = (out / "roman.pdf").read_bytes()
         if not b.startswith(b"%PDF-") or b"%%EOF" not in b[-2048:]:
             raise SystemExit("Invalid PDF")
+        from pypdf import PdfReader
+        pdf = PdfReader(str(out / "roman.pdf"))
+        if not pdf.pages or len(pdf.pages[0].images) == 0:
+            raise SystemExit("PDF does not start with cover image")
+        if count and len(pdf.pages) < count:
+            raise SystemExit("PDF has fewer pages than chapters")
     print(f"BOOK VALIDATION: PASS ({count} chapters, {a.format})")
     return 0
 
