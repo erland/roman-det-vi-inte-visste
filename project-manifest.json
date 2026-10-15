@@ -1,0 +1,333 @@
+{
+  "canonical_zip_name": "det-vi-inte-visste-r0117-omslag-i-projektet.zip",
+  "chapters": {
+    "count": 35,
+    "first": 1,
+    "hashes": {
+      "kapitel/kapitel-01.md": "2b7c2a9d901cee61d94c1875491f406ec3a7bdb65e90a8191837cd0204cf997c",
+      "kapitel/kapitel-02.md": "8ef647032dc33076fe1690b1935f2a687c3bfa2de66e40255502c2f96fd14ba3",
+      "kapitel/kapitel-03.md": "23005002239144e3eb172e2bf549e83ef1b3ffd88ea5b0de75bda322bf34fb16",
+      "kapitel/kapitel-04.md": "b578b0e21b772f1c22272a60ccd18bf3a4ac68971c210aeaaa10e6dc578fe8ef",
+      "kapitel/kapitel-05.md": "4c564ec0e0af4eaa3e5bd982be3244789b907642a42dfbe44be3426c1e99ab97",
+      "kapitel/kapitel-06.md": "ecc04d43baed1ddbe018e1658329e176f5d25fe9d0b1cd20075760d81ffc6c71",
+      "kapitel/kapitel-07.md": "693c560d8b4de6c7817caa660209a76a82a10d6ba3aeb9dbb58caf0d8a5fe5b6",
+      "kapitel/kapitel-08.md": "c9df05bdcf05ed6b896613124a6fe55f1bb1bccdd542fed418ce9563022113e6",
+      "kapitel/kapitel-09.md": "ee3473477bf12ce4f3da16fe144a07b3a35d43dd451dbc50ac067ca44f3cc30e",
+      "kapitel/kapitel-10.md": "edacf8aa439e8e212dc02eafa7323515ca3e4b190db622a98b76709e4bb49e84",
+      "kapitel/kapitel-11.md": "a45434aea7b1b003925ccd63ba982bfeeed23aec4b1506a1928aaa1f4fdb84ee",
+      "kapitel/kapitel-12.md": "9a893e9b82d369a1d7d91809af55a81d7e675ce6b657cc6a6534a0f89a86786f",
+      "kapitel/kapitel-13.md": "d7cf158930673de25856d6e91da6039fff177e8cce6acf4a30e8cd2d4a84a6fd",
+      "kapitel/kapitel-14.md": "c12246bf68e859bdd53f1bd8ee86abeb43770252538e6460ee7e386306d54aa3",
+      "kapitel/kapitel-15.md": "a7af5a9856132b84f4e427ac5f8f65e4abab82f688c495c4d81bc53c4c99f1f0",
+      "kapitel/kapitel-16.md": "3545070eadb7576d6b600cd05db22e8d27e481e226a32db66740f5b25989eb06",
+      "kapitel/kapitel-17.md": "c12df4cfe0aa615759c73f4e25472da1c44d052d88317de52c91bbcc5423e25c",
+      "kapitel/kapitel-18.md": "58a75d3a8e3682b8e0e6abf1066a36aa0715ad021e0a242cc2f7e6860fce56a5",
+      "kapitel/kapitel-19.md": "50f0d48eec79895001ef0e299b0b59bcefef4bb6d58cfb6787ae2b244f33eb58",
+      "kapitel/kapitel-20.md": "d6fc4ab06d1e3242462c2adcb57fe547290aaf1ddfe7896db360ce39049f3c87",
+      "kapitel/kapitel-21.md": "394dcf63f7a3ae966005ba8dabc354d462df4a5c58cfaa459feea60b09643306",
+      "kapitel/kapitel-22.md": "15c7438f02b915776fe42b348e221e11dbdb5fbdcb4a74d838a3aab833323f42",
+      "kapitel/kapitel-23.md": "2b4ef2fd76b73a24bd74af0d709238d977e7b3148ee37eb5cb6a8d60a3ab0613",
+      "kapitel/kapitel-24.md": "b792562d0cabb1c1cea7c6838390ec6ebc8a707bd6dc2bdb87ef9d545517b448",
+      "kapitel/kapitel-25.md": "74ce7eb15f255d11e71a4ffed8e71cf864756b9ae1d69d9e4b4fed2d1f340004",
+      "kapitel/kapitel-26.md": "c20ff2420bb09ab27de7d1c7242aa7fc61abac7733ef13b6e7b067485f46efd9",
+      "kapitel/kapitel-27.md": "895ed80ebd95eec4500e41064fc567816550337771b782c21120159b821d0508",
+      "kapitel/kapitel-28.md": "bbcd87f9a1ebf1306913ebaaed6f72f09c13e2dc94a63f422a20169f57581d4b",
+      "kapitel/kapitel-29.md": "5d7ac9a2083329e1477968dc2554e4ee33eadb107c783466d37d4c0e941d2bff",
+      "kapitel/kapitel-30.md": "e5bda4cb4579837458ee1457ed2c91755ad4abfbf7738e24f76e5f8aa2f20417",
+      "kapitel/kapitel-31.md": "4486b466b817d4bb2809a0f82d6b23b36cdfd772ac019a308ed70df3cb3e01ad",
+      "kapitel/kapitel-32.md": "4a79b8032fa86c93880a1e08ef090c0d453af1bc5987fa69a5758ba054fc3642",
+      "kapitel/kapitel-33.md": "b96f04b7c5a6585b102f62ba13725d891708e87e8a3d4b5f6d2dd5c5ed78d951",
+      "kapitel/kapitel-34.md": "903764b46ab687290e1016194bd944f268cf78de69ca9e3112f05016cf4beb86",
+      "kapitel/kapitel-35.md": "5bf64edf5c6c0fe9c49ec59b59531fe22ae0a4f40a986d2a164a87172a279d66"
+    },
+    "latest": 35,
+    "missing": []
+  },
+  "created_at": "2026-10-15T06:17:55Z",
+  "last_operation": {
+    "changed_files": [
+      "README.md",
+      "arbetslogg.md",
+      "project-index.md",
+      "projektstatus.md",
+      "publishing/build-notes.md",
+      "publishing/cover.png",
+      "publishing/metadata.yaml",
+      "revision-log.md",
+      "roman-bibel.md"
+    ],
+    "description": "Lade in fastställd omslagsbild i projektet och uppdaterade publiceringsmetadata",
+    "source_revision": 116,
+    "source_zip_name": "det-vi-inte-visste-r0116-forfattare-erland-lindmark.zip",
+    "type": "commit"
+  },
+  "migration": null,
+  "parent_revision": 116,
+  "project_id": "f83b4e88-0f5a-4264-a0a4-a2269eb0bff5",
+  "project_slug": "det-vi-inte-visste",
+  "revision": 117,
+  "schema_version": 1,
+  "tracked_files": {
+    ".github/workflows/build-book.yml": {
+      "bytes": 1163,
+      "sha256": "57de96766a0396b408236e5fb74d5da390109720d295fa613f296b899517f51a"
+    },
+    ".github/workflows/verify.yml": {
+      "bytes": 442,
+      "sha256": "4471da8b229af160ba79ac556f04281d2ef3387da8a6215f8ae426feb75dc5b1"
+    },
+    "README.md": {
+      "bytes": 1722,
+      "sha256": "135f9326d943ea0acc1c2bee2a2c3f5371b0e6b96d371d6fdaf4bec117ac0912"
+    },
+    "arbetslogg.md": {
+      "bytes": 27053,
+      "sha256": "e6cd09a2835e1a2889f5f1c719d19692a165be5abc26b3b6dc9cf4dd60f5659f"
+    },
+    "exports/README.md": {
+      "bytes": 223,
+      "sha256": "bc6b4d4864949d8e79857b9c51176bc68019c868781300c0ebbf073560bf65bf"
+    },
+    "exports/exportlogg.md": {
+      "bytes": 1138,
+      "sha256": "e5e6429dc4930d9e08d767ef2d785412bd1727a0c5dd8f15781408340eb1d680"
+    },
+    "kapitel/kapitel-01.md": {
+      "bytes": 14084,
+      "sha256": "2b7c2a9d901cee61d94c1875491f406ec3a7bdb65e90a8191837cd0204cf997c"
+    },
+    "kapitel/kapitel-02.md": {
+      "bytes": 16754,
+      "sha256": "8ef647032dc33076fe1690b1935f2a687c3bfa2de66e40255502c2f96fd14ba3"
+    },
+    "kapitel/kapitel-03.md": {
+      "bytes": 14039,
+      "sha256": "23005002239144e3eb172e2bf549e83ef1b3ffd88ea5b0de75bda322bf34fb16"
+    },
+    "kapitel/kapitel-04.md": {
+      "bytes": 14575,
+      "sha256": "b578b0e21b772f1c22272a60ccd18bf3a4ac68971c210aeaaa10e6dc578fe8ef"
+    },
+    "kapitel/kapitel-05.md": {
+      "bytes": 13036,
+      "sha256": "4c564ec0e0af4eaa3e5bd982be3244789b907642a42dfbe44be3426c1e99ab97"
+    },
+    "kapitel/kapitel-06.md": {
+      "bytes": 14905,
+      "sha256": "ecc04d43baed1ddbe018e1658329e176f5d25fe9d0b1cd20075760d81ffc6c71"
+    },
+    "kapitel/kapitel-07.md": {
+      "bytes": 14222,
+      "sha256": "693c560d8b4de6c7817caa660209a76a82a10d6ba3aeb9dbb58caf0d8a5fe5b6"
+    },
+    "kapitel/kapitel-08.md": {
+      "bytes": 13435,
+      "sha256": "c9df05bdcf05ed6b896613124a6fe55f1bb1bccdd542fed418ce9563022113e6"
+    },
+    "kapitel/kapitel-09.md": {
+      "bytes": 13769,
+      "sha256": "ee3473477bf12ce4f3da16fe144a07b3a35d43dd451dbc50ac067ca44f3cc30e"
+    },
+    "kapitel/kapitel-10.md": {
+      "bytes": 13428,
+      "sha256": "edacf8aa439e8e212dc02eafa7323515ca3e4b190db622a98b76709e4bb49e84"
+    },
+    "kapitel/kapitel-11.md": {
+      "bytes": 13673,
+      "sha256": "a45434aea7b1b003925ccd63ba982bfeeed23aec4b1506a1928aaa1f4fdb84ee"
+    },
+    "kapitel/kapitel-12.md": {
+      "bytes": 13555,
+      "sha256": "9a893e9b82d369a1d7d91809af55a81d7e675ce6b657cc6a6534a0f89a86786f"
+    },
+    "kapitel/kapitel-13.md": {
+      "bytes": 13490,
+      "sha256": "d7cf158930673de25856d6e91da6039fff177e8cce6acf4a30e8cd2d4a84a6fd"
+    },
+    "kapitel/kapitel-14.md": {
+      "bytes": 14910,
+      "sha256": "c12246bf68e859bdd53f1bd8ee86abeb43770252538e6460ee7e386306d54aa3"
+    },
+    "kapitel/kapitel-15.md": {
+      "bytes": 13591,
+      "sha256": "a7af5a9856132b84f4e427ac5f8f65e4abab82f688c495c4d81bc53c4c99f1f0"
+    },
+    "kapitel/kapitel-16.md": {
+      "bytes": 13855,
+      "sha256": "3545070eadb7576d6b600cd05db22e8d27e481e226a32db66740f5b25989eb06"
+    },
+    "kapitel/kapitel-17.md": {
+      "bytes": 13256,
+      "sha256": "c12df4cfe0aa615759c73f4e25472da1c44d052d88317de52c91bbcc5423e25c"
+    },
+    "kapitel/kapitel-18.md": {
+      "bytes": 13371,
+      "sha256": "58a75d3a8e3682b8e0e6abf1066a36aa0715ad021e0a242cc2f7e6860fce56a5"
+    },
+    "kapitel/kapitel-19.md": {
+      "bytes": 13302,
+      "sha256": "50f0d48eec79895001ef0e299b0b59bcefef4bb6d58cfb6787ae2b244f33eb58"
+    },
+    "kapitel/kapitel-20.md": {
+      "bytes": 13591,
+      "sha256": "d6fc4ab06d1e3242462c2adcb57fe547290aaf1ddfe7896db360ce39049f3c87"
+    },
+    "kapitel/kapitel-21.md": {
+      "bytes": 14074,
+      "sha256": "394dcf63f7a3ae966005ba8dabc354d462df4a5c58cfaa459feea60b09643306"
+    },
+    "kapitel/kapitel-22.md": {
+      "bytes": 13965,
+      "sha256": "15c7438f02b915776fe42b348e221e11dbdb5fbdcb4a74d838a3aab833323f42"
+    },
+    "kapitel/kapitel-23.md": {
+      "bytes": 13529,
+      "sha256": "2b4ef2fd76b73a24bd74af0d709238d977e7b3148ee37eb5cb6a8d60a3ab0613"
+    },
+    "kapitel/kapitel-24.md": {
+      "bytes": 14191,
+      "sha256": "b792562d0cabb1c1cea7c6838390ec6ebc8a707bd6dc2bdb87ef9d545517b448"
+    },
+    "kapitel/kapitel-25.md": {
+      "bytes": 13173,
+      "sha256": "74ce7eb15f255d11e71a4ffed8e71cf864756b9ae1d69d9e4b4fed2d1f340004"
+    },
+    "kapitel/kapitel-26.md": {
+      "bytes": 13919,
+      "sha256": "c20ff2420bb09ab27de7d1c7242aa7fc61abac7733ef13b6e7b067485f46efd9"
+    },
+    "kapitel/kapitel-27.md": {
+      "bytes": 13721,
+      "sha256": "895ed80ebd95eec4500e41064fc567816550337771b782c21120159b821d0508"
+    },
+    "kapitel/kapitel-28.md": {
+      "bytes": 14552,
+      "sha256": "bbcd87f9a1ebf1306913ebaaed6f72f09c13e2dc94a63f422a20169f57581d4b"
+    },
+    "kapitel/kapitel-29.md": {
+      "bytes": 13887,
+      "sha256": "5d7ac9a2083329e1477968dc2554e4ee33eadb107c783466d37d4c0e941d2bff"
+    },
+    "kapitel/kapitel-30.md": {
+      "bytes": 14344,
+      "sha256": "e5bda4cb4579837458ee1457ed2c91755ad4abfbf7738e24f76e5f8aa2f20417"
+    },
+    "kapitel/kapitel-31.md": {
+      "bytes": 13644,
+      "sha256": "4486b466b817d4bb2809a0f82d6b23b36cdfd772ac019a308ed70df3cb3e01ad"
+    },
+    "kapitel/kapitel-32.md": {
+      "bytes": 13229,
+      "sha256": "4a79b8032fa86c93880a1e08ef090c0d453af1bc5987fa69a5758ba054fc3642"
+    },
+    "kapitel/kapitel-33.md": {
+      "bytes": 12915,
+      "sha256": "b96f04b7c5a6585b102f62ba13725d891708e87e8a3d4b5f6d2dd5c5ed78d951"
+    },
+    "kapitel/kapitel-34.md": {
+      "bytes": 13300,
+      "sha256": "903764b46ab687290e1016194bd944f268cf78de69ca9e3112f05016cf4beb86"
+    },
+    "kapitel/kapitel-35.md": {
+      "bytes": 8224,
+      "sha256": "5bf64edf5c6c0fe9c49ec59b59531fe22ae0a4f40a986d2a164a87172a279d66"
+    },
+    "kapitel/kapitelmall.md": {
+      "bytes": 106,
+      "sha256": "b5bcdb27cc9768aa3087879676dee5dc9f7380efeca092deb7bc03b3f484d0c1"
+    },
+    "kapitelnoteringar.md": {
+      "bytes": 79864,
+      "sha256": "282f4083ca6fd3278654fd68b99e25828bd53bbee9fd1a3e5f450d6a0d6e759a"
+    },
+    "kapitelplan.md": {
+      "bytes": 23400,
+      "sha256": "4d0860d0ac49ae6a38af460bf9b10c5691d421c520f7509b05cb632883d8dac5"
+    },
+    "karaktarer/antagonist.md": {
+      "bytes": 537,
+      "sha256": "c164c2a615cbadf537946afdbe39209f0bae7bda51cd70d5fe53943825d78513"
+    },
+    "karaktarer/bifigurer.md": {
+      "bytes": 1699,
+      "sha256": "c90b4ea60e97801e73f2423925a7d78a0270c86a3b1bffc326b9970f1b3a0469"
+    },
+    "karaktarer/huvudperson.md": {
+      "bytes": 4209,
+      "sha256": "79b6fa77a622f4cb989f896a31c7224504b25e65aaf8d01a422afbfa4bfd73b0"
+    },
+    "kontinuitetsanteckningar.md": {
+      "bytes": 47372,
+      "sha256": "697c82e3201373dae8add4fceb1c2f5380e8dc8cce57fefe847a29d4fd27d506"
+    },
+    "project-index.md": {
+      "bytes": 5675,
+      "sha256": "f3aade9c4f270624b5dccb1ff3c969e67400e44807d111a0d56c771520a99f29"
+    },
+    "projektstatus.md": {
+      "bytes": 2576,
+      "sha256": "8b9dddfe862854edc4ca74a441789231c63da01fb620d9d3e3731840d3bb5d96"
+    },
+    "publishing/build-notes.md": {
+      "bytes": 1166,
+      "sha256": "d27bb062b6e597a28c8a143588e1ea457118687d27282de21dcbfd578eb99f68"
+    },
+    "publishing/cover.png": {
+      "bytes": 2386854,
+      "sha256": "e02558a2cf8cb834520ddc8404893953e4a041c3cb279d8bfae5bf74c2c1564f"
+    },
+    "publishing/epub.css": {
+      "bytes": 282,
+      "sha256": "827f4657c7eb865bebd234f1799fa487665dd42d73df8ac7bebbe860491ec785"
+    },
+    "publishing/fix-epub-after-pandoc.py": {
+      "bytes": 467,
+      "sha256": "c6cbfd4e2fb38a65e04fb08497d557153859c0bda9024ac99eb834e1001daf54"
+    },
+    "publishing/metadata.yaml": {
+      "bytes": 153,
+      "sha256": "ae5aeeeedd0ca10430078ab7523a103cd7e5159f21f83b28ec2be9c7b874a1f7"
+    },
+    "publishing/pdf-template.tex": {
+      "bytes": 177,
+      "sha256": "9a6ad6a1fba88f2f8a754dbf8077b5e08175c135a3d689874104c169a25beab3"
+    },
+    "revision-log.md": {
+      "bytes": 33556,
+      "sha256": "031d5ebcaf46e3d07bdb912fb5d1b9558841d29d25908a6076b555977ace3a5d"
+    },
+    "revisionsonskemal.md": {
+      "bytes": 24958,
+      "sha256": "50107815e61536913bd909b885c2d43ffa974d9f67c96ee02f07f38d5538dea2"
+    },
+    "roman-bibel.md": {
+      "bytes": 4215,
+      "sha256": "8cb415172415cabba667f0f85ab5327f863ec9df5c5ed9d92eb488a8b4c89f98"
+    },
+    "scripts/build_book.py": {
+      "bytes": 3342,
+      "sha256": "c912fba952522f40968d1c88da4ddf1819df0af00258e3808ee66f6037786880"
+    },
+    "scripts/project_integrity.py": {
+      "bytes": 5397,
+      "sha256": "b446f3f8297b3e75d2f6a4ee9a68a764e104470820f66979c82dd76f41593e5e"
+    },
+    "scripts/validate_book.py": {
+      "bytes": 1829,
+      "sha256": "8f2e59b98ca63d52fd97486a3491b2f7dbad386edfb8c07cc0966ceb2de46213"
+    },
+    "stilguide.md": {
+      "bytes": 1735,
+      "sha256": "0547cf63899c61928af4e1e336aa2f57dfee5f0003d6fb5d63dea2eeb89fc964"
+    },
+    "synopsis.md": {
+      "bytes": 2630,
+      "sha256": "256bd220b5432805e20daa19ecae23e187e337d24760b47cd14d38b00c27aa9b"
+    },
+    "tidslinje.md": {
+      "bytes": 17470,
+      "sha256": "a13c556fd6897680a9b5666792cce8719ff71d995ed1c5f9373a0864fad7f36d"
+    }
+  },
+  "updated_at": "2026-10-15T13:28:07Z"
+}
