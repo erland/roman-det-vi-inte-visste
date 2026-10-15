@@ -1,5 +1,5 @@
 {
-  "canonical_zip_name": "det-vi-inte-visste-r0120-boklayout.zip",
+  "canonical_zip_name": "det-vi-inte-visste-r0121-epub-stycken-omslag.zip",
   "chapters": {
     "count": 35,
     "first": 1,
@@ -46,7 +46,6 @@
   "created_at": "2026-10-15T06:17:55Z",
   "last_operation": {
     "changed_files": [
-      ".github/workflows/build-book.yml",
       "arbetslogg.md",
       "project-index.md",
       "projektstatus.md",
@@ -54,19 +53,18 @@
       "publishing/epub.css",
       "publishing/fix-epub-after-pandoc.py",
       "revision-log.md",
-      "scripts/build_book.py",
       "scripts/validate_book.py"
     ],
-    "description": "Rättade boklayout enligt Romanskaparens publiceringsstandard med validering",
-    "source_revision": 119,
-    "source_zip_name": "det-vi-inte-visste-r0119-fix-epub-build.zip",
+    "description": "Synkade EPUB stycken med PDF och säkrade omslag som första lässida",
+    "source_revision": 120,
+    "source_zip_name": "det-vi-inte-visste-r0120-boklayout.zip",
     "type": "commit"
   },
   "migration": null,
-  "parent_revision": 119,
+  "parent_revision": 120,
   "project_id": "f83b4e88-0f5a-4264-a0a4-a2269eb0bff5",
   "project_slug": "det-vi-inte-visste",
-  "revision": 120,
+  "revision": 121,
   "schema_version": 1,
   "tracked_files": {
     ".github/workflows/build-book.yml": {
@@ -82,8 +80,8 @@
       "sha256": "135f9326d943ea0acc1c2bee2a2c3f5371b0e6b96d371d6fdaf4bec117ac0912"
     },
     "arbetslogg.md": {
-      "bytes": 27654,
-      "sha256": "623c99197a03aad7c7705d7a524b68336b010c903416a03d64a3a62aa7cad308"
+      "bytes": 27866,
+      "sha256": "6d7cdd54b232a5f35b7b9c2161ead5e38732c90498bdb6d3c522edaf895d5e52"
     },
     "exports/README.md": {
       "bytes": 223,
@@ -262,28 +260,28 @@
       "sha256": "697c82e3201373dae8add4fceb1c2f5380e8dc8cce57fefe847a29d4fd27d506"
     },
     "project-index.md": {
-      "bytes": 5666,
-      "sha256": "3074cde0a5d08a0807c1c013e78d4321e3918c2af0842208224f0358c61319de"
+      "bytes": 5676,
+      "sha256": "18d90b8783d7ae608273a6ccbe1ffcb9a92a95712704434e4b33a026a27df8e7"
     },
     "projektstatus.md": {
-      "bytes": 2727,
-      "sha256": "4d7a65afdb460b5e63387211435303462eb6754c451c5616ad0a3dab5213e588"
+      "bytes": 2856,
+      "sha256": "8047e4fb3d6b9eab8f958f48b831274cc457a39e30fb9a5d6dba19613eecb4e9"
     },
     "publishing/build-notes.md": {
-      "bytes": 1498,
-      "sha256": "fba82fdcc9d92311cd7e0bcdd50be09ef2a21c28892abe8ba1cce61041e28465"
+      "bytes": 1829,
+      "sha256": "39468ec6d738b38ce40f7e5bfc2d08fdf9d04d585e1c3d4b0ebfc4921692802d"
     },
     "publishing/cover.png": {
       "bytes": 2386854,
       "sha256": "e02558a2cf8cb834520ddc8404893953e4a041c3cb279d8bfae5bf74c2c1564f"
     },
     "publishing/epub.css": {
-      "bytes": 1019,
-      "sha256": "0271eea41a2d8f1e864e5a5157682349f1e03fbfb3a531cd22813083c4c903d1"
+      "bytes": 1443,
+      "sha256": "cd6407fcabb3dc6b6cf0136c6416906b0f6e05a9063f13230a9c9e541160d6af"
     },
     "publishing/fix-epub-after-pandoc.py": {
-      "bytes": 2680,
-      "sha256": "424b8b616d08631af55c2a4c5cbb3d999dd162d3640114a6f27169fc507c5ffd"
+      "bytes": 3498,
+      "sha256": "72f0fd51c64e1bd3b3700e84057f8cd5f6975230ba1f30dc9a954a3b562b4f32"
     },
     "publishing/metadata.yaml": {
       "bytes": 153,
@@ -294,8 +292,8 @@
       "sha256": "9a6ad6a1fba88f2f8a754dbf8077b5e08175c135a3d689874104c169a25beab3"
     },
     "revision-log.md": {
-      "bytes": 34366,
-      "sha256": "7454c46985f17cf291e18c493e3330b5706f24840fda43aa3d5d8d166f09eab7"
+      "bytes": 34683,
+      "sha256": "c5c88e0721f26e1a10cdf54725c1e01ed5d56f62a20aabbd7c4a31c4eb53b162"
     },
     "revisionsonskemal.md": {
       "bytes": 24958,
@@ -314,8 +312,8 @@
       "sha256": "b446f3f8297b3e75d2f6a4ee9a68a764e104470820f66979c82dd76f41593e5e"
     },
     "scripts/validate_book.py": {
-      "bytes": 2151,
-      "sha256": "3a629d763c5bef32e039beb415ea50ebade82cca29908b3046f270f85e310436"
+      "bytes": 3256,
+      "sha256": "e8d171b0dd8e3deac86abd40d208aa12880ce74f531726e5fccb57dc60f453b5"
     },
     "stilguide.md": {
       "bytes": 1735,
@@ -330,5 +328,5 @@
       "sha256": "a13c556fd6897680a9b5666792cce8719ff71d995ed1c5f9373a0864fad7f36d"
     }
   },
-  "updated_at": "2026-10-15T15:37:23Z"
+  "updated_at": "2026-10-15T15:54:33Z"
 }
