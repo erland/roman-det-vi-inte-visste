@@ -1,5 +1,5 @@
 {
-  "canonical_zip_name": "det-vi-inte-visste-r0121-epub-stycken-omslag.zip",
+  "canonical_zip_name": "det-vi-inte-visste-r0122-boklayout-sidhuvud.zip",
   "chapters": {
     "count": 35,
     "first": 1,
@@ -53,18 +53,19 @@
       "publishing/epub.css",
       "publishing/fix-epub-after-pandoc.py",
       "revision-log.md",
+      "scripts/build_book.py",
       "scripts/validate_book.py"
     ],
-    "description": "Synkade EPUB stycken med PDF och säkrade omslag som första lässida",
-    "source_revision": 120,
-    "source_zip_name": "det-vi-inte-visste-r0120-boklayout.zip",
+    "description": "Förbättrade EPUB-stycken och omslag, centrerade PDF-omslaget och tog bort CONTENTS i sidhuvud",
+    "source_revision": 121,
+    "source_zip_name": "det-vi-inte-visste-r0121-epub-stycken-omslag.zip",
     "type": "commit"
   },
   "migration": null,
-  "parent_revision": 120,
+  "parent_revision": 121,
   "project_id": "f83b4e88-0f5a-4264-a0a4-a2269eb0bff5",
   "project_slug": "det-vi-inte-visste",
-  "revision": 121,
+  "revision": 122,
   "schema_version": 1,
   "tracked_files": {
     ".github/workflows/build-book.yml": {
@@ -80,8 +81,8 @@
       "sha256": "135f9326d943ea0acc1c2bee2a2c3f5371b0e6b96d371d6fdaf4bec117ac0912"
     },
     "arbetslogg.md": {
-      "bytes": 27866,
-      "sha256": "6d7cdd54b232a5f35b7b9c2161ead5e38732c90498bdb6d3c522edaf895d5e52"
+      "bytes": 28094,
+      "sha256": "1c8a1114390d80743111121b65d9c2b657278238fe5afa0bb283a6b43c05440b"
     },
     "exports/README.md": {
       "bytes": 223,
@@ -260,28 +261,28 @@
       "sha256": "697c82e3201373dae8add4fceb1c2f5380e8dc8cce57fefe847a29d4fd27d506"
     },
     "project-index.md": {
-      "bytes": 5676,
-      "sha256": "18d90b8783d7ae608273a6ccbe1ffcb9a92a95712704434e4b33a026a27df8e7"
+      "bytes": 5671,
+      "sha256": "6d15715b4f4d96ab858d6dd7afa659dec5d9c9363697d60bf263f9e8e6fe5960"
     },
     "projektstatus.md": {
-      "bytes": 2856,
-      "sha256": "8047e4fb3d6b9eab8f958f48b831274cc457a39e30fb9a5d6dba19613eecb4e9"
+      "bytes": 2989,
+      "sha256": "cbd30c6f32a76d335c0c0605ac42d1433a410fe27665fe2cc2e58bbc80f3d711"
     },
     "publishing/build-notes.md": {
-      "bytes": 1829,
-      "sha256": "39468ec6d738b38ce40f7e5bfc2d08fdf9d04d585e1c3d4b0ebfc4921692802d"
+      "bytes": 2066,
+      "sha256": "052798eabdf47a1d4f2d6be6fb6edc08363326c552ad6fd52543eeba50c48ef1"
     },
     "publishing/cover.png": {
       "bytes": 2386854,
       "sha256": "e02558a2cf8cb834520ddc8404893953e4a041c3cb279d8bfae5bf74c2c1564f"
     },
     "publishing/epub.css": {
-      "bytes": 1443,
-      "sha256": "cd6407fcabb3dc6b6cf0136c6416906b0f6e05a9063f13230a9c9e541160d6af"
+      "bytes": 1670,
+      "sha256": "9766260b290131d0587b09cfed826e9f5456b4bc9212d8c5ba59fd13b8545c55"
     },
     "publishing/fix-epub-after-pandoc.py": {
-      "bytes": 3498,
-      "sha256": "72f0fd51c64e1bd3b3700e84057f8cd5f6975230ba1f30dc9a954a3b562b4f32"
+      "bytes": 4412,
+      "sha256": "5eae47a40d5a37771af0287597d0e66f0ceb07d376e402450a6bd7bfae329f94"
     },
     "publishing/metadata.yaml": {
       "bytes": 153,
@@ -292,8 +293,8 @@
       "sha256": "9a6ad6a1fba88f2f8a754dbf8077b5e08175c135a3d689874104c169a25beab3"
     },
     "revision-log.md": {
-      "bytes": 34683,
-      "sha256": "c5c88e0721f26e1a10cdf54725c1e01ed5d56f62a20aabbd7c4a31c4eb53b162"
+      "bytes": 35048,
+      "sha256": "629d17d7c162c8dd804af7a7e4730ca21d55a849d33b54a5b67fbdc9a5acefc0"
     },
     "revisionsonskemal.md": {
       "bytes": 24958,
@@ -304,16 +305,16 @@
       "sha256": "8cb415172415cabba667f0f85ab5327f863ec9df5c5ed9d92eb488a8b4c89f98"
     },
     "scripts/build_book.py": {
-      "bytes": 5929,
-      "sha256": "fa6c52303802f6298c9c412051d51d98cc8e9cd421b1b56ce0ec6894eed44622"
+      "bytes": 6426,
+      "sha256": "f9ba81ab5f3c66d2308cac5f11c21e3f5e2dc1b24aef3c40a582e9c3bbaaae37"
     },
     "scripts/project_integrity.py": {
       "bytes": 5397,
       "sha256": "b446f3f8297b3e75d2f6a4ee9a68a764e104470820f66979c82dd76f41593e5e"
     },
     "scripts/validate_book.py": {
-      "bytes": 3256,
-      "sha256": "e8d171b0dd8e3deac86abd40d208aa12880ce74f531726e5fccb57dc60f453b5"
+      "bytes": 3562,
+      "sha256": "64d06ce93a4f88d2a253fdede41a9510be3cd68c2b1f5508dcaa432c2b1f98de"
     },
     "stilguide.md": {
       "bytes": 1735,
@@ -328,5 +329,5 @@
       "sha256": "a13c556fd6897680a9b5666792cce8719ff71d995ed1c5f9373a0864fad7f36d"
     }
   },
-  "updated_at": "2026-10-15T15:54:33Z"
+  "updated_at": "2026-10-15T17:02:28Z"
 }

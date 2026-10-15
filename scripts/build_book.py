@@ -64,14 +64,14 @@ def main() -> int:
                 label=latex_escape(n+'. '+m.group(2))
                 return '\\clearpage\n\\phantomsection\n\\addcontentsline{toc}{chapter}{'+label+'}\n\\chapter*{\\centering\\normalfont '+n+r'\\[0.2em]'+name+'}\n'
             pdf_body=HEADING.sub(chapter,source_text)
-            front = (r'\begin{titlepage}'+'\n'+r'\pagenumbering{gobble}'+'\n'+r'\thispagestyle{empty}'+'\n'+r'\centering'+'\n'
-                +r'\includegraphics[width=\paperwidth,height=0.96\paperheight,keepaspectratio]{'+str(cover)+'}\n'+r'\end{titlepage}'+'\n'
-                +r'\begin{titlepage}\thispagestyle{empty}\centering\vspace*{0.30\textheight}'+'\n'
-                +r'{\Huge\bfseries '+latex_escape(title)+r'\par}'+'\n'+r'\vspace{2em}'+'\n'
-                +r'{\Large '+latex_escape(author)+r'\par}'+'\n'+r'\end{titlepage}'+'\n'
-                +r'\tableofcontents'+'\n'+r'\clearpage'+'\n'+r'\pagenumbering{arabic}'+'\n')
+            front = ("\\begin{titlepage}\n\\pagenumbering{gobble}\n\\thispagestyle{empty}\n\\centering\n"
+                + "\\vspace*{\\fill}\n\\noindent\\makebox[\\textwidth][c]{\\includegraphics[width=0.76\\paperwidth,height=0.78\\paperheight,keepaspectratio]{"+str(cover)+"}}\n\\vspace*{\\fill}\n\\end{titlepage}\n"
+                + "\\begin{titlepage}\\thispagestyle{empty}\\centering\\vspace*{0.30\\textheight}\n"
+                + "{\\Huge\\bfseries "+latex_escape(title)+"\\par}\n\\vspace{2em}\n"
+                + "{\\Large "+latex_escape(author)+"\\par}\n\\end{titlepage}\n"
+                + "\\tableofcontents\n\\clearpage\n\\pagenumbering{arabic}\n")
             pdf_input=d/'book-pdf.md';pdf_input.write_text(front+'\n'+pdf_body,encoding='utf-8')
-            header=d/'header.tex';header.write_text(r'\usepackage{graphicx}'+'\n'+r'\usepackage{titlesec}'+'\n'+r'\titlespacing*{\chapter}{0pt}{0.8em}{0.7em}'+'\n',encoding='utf-8')
+            header=d/'header.tex';header.write_text(r'\usepackage{graphicx}'+'\n'+r'\usepackage{titlesec}'+'\n'+r'\titlespacing*{\chapter}{0pt}{0.8em}{0.7em}'+'\n'+r'\AtBeginDocument{\pagestyle{plain}}'+'\n',encoding='utf-8')
             run(['pandoc',str(pdf_input),'--include-in-header',str(header),'--standalone','--from=markdown+raw_tex',
                 '--pdf-engine=xelatex','--top-level-division=chapter',
                 '--metadata=title:','--metadata=author:',
@@ -83,9 +83,16 @@ def main() -> int:
             from pypdf import PdfReader, PdfWriter
             pdf_path=out/'roman.pdf'
             pdf=PdfReader(str(pdf_path))
-            if len(pdf.pages)>1 and not (pdf.pages[0].extract_text() or '').strip() and len(pdf.pages[1].images)>0:
+            # Drop empty leaves created around Pandoc's explicit title pages.
+            # Preserve the actual first image-bearing cover and the subsequent title page.
+            pages=list(pdf.pages)
+            if len(pages)>1 and not (pages[0].extract_text() or '').strip() and not pages[0].images and pages[1].images:
+                pages=pages[1:]
+            if len(pages)>2 and pages[0].images and not (pages[1].extract_text() or '').strip() and not pages[1].images:
+                pages.pop(1)
+            if len(pages)!=len(pdf.pages):
                 writer=PdfWriter()
-                for page in pdf.pages[1:]:writer.add_page(page)
+                for page in pages:writer.add_page(page)
                 staged=d/'trimmed.pdf'
                 with staged.open('wb') as stream:writer.write(stream)
                 staged.replace(pdf_path)

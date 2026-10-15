@@ -14,3 +14,6 @@ GitHub- och lokal export använder Romanskaparens standard: omslagsbilden först
 
 ## EPUB-läsordning och stycken r121
 EPUB-stycken använder samma kompakta styckesindelning som PDF utan extra första-radsindrag och marginal efter varje p. Omslaget är explicit första linjära EPUB-sida. Apple Books kan behöva radera en tidigare importerad version eftersom dess bibliotek/cache kan bevara en äldre utgåva.
+
+## Exportlayout r122
+PDF-omslaget centreras i sidans textlåda med en måttbegränsad bild; EPUB-omslaget är en XHTML-img i första lässidan, och löptext använder diskret första-radsindrag utom första stycket efter kapitelrubrik.
